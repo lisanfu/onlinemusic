@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.multipart.maxSize" value="10000000" />
+	<package name="Pluto" extends="struts-default">
+		<action name="register" class="Pluto.register"></action>
+		<action name="login" class="Pluto.login"></action>
+		<action name="logout" class="Pluto.logout"></action>
+		<action name="uploadmusic" class="Pluto.uploadmusic">
+			<param name="savePath">/upload</param>
+		</action>
+		<action name="upload" class="Pluto.upload"></action>
+		<action name="message" class="Pluto.message"></action>
+		<action name="addtobox" class="Pluto.MusicBox"></action>
+		<action name="setbox" class="Pluto.setbox"></action>
+		<action name="addcomments" class="Pluto.addComments"></action>
+		<action name="delmessage" class="Pluto.delmessage"></action>
+		<action name="sendmusic" class="Pluto.sendmusic"></action>
+		<action name="admin_login" class="Pluto.admin.login"></action>
+		<action name="admin_changepwd" class="Pluto.admin.changepwd"></action>
+		<action name="admin_register" class="Pluto.admin.register"></action>
+		<action name="admin_deluser" class="Pluto.admin.deluser"></action>
+		<action name="admin_link" class="Pluto.admin.link"></action>
+		<action name="admin_dellink" class="Pluto.admin.dellink"></action>
+		<action name="admin_delmusic" class="Pluto.admin.delmusic"></action>
+	</package>
+</struts>
